@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <title>Homework1</title>
+  <script src="https://kit.fontawesome.com/5fd606d4b0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <!--Header Start-->
+  <header>
+    <div class="header">
+      <div class="TopArea">
+        <div class="social">
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-google-plus"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+
+        <div class="contact">
+          <i class="fa-solid fa-envelope"></i>
+          <p>thmehedi99999@gmail.com</p>
+          <i class="fa-solid fa-phone"></i>
+          <p>+8801774010193</p>
+        </div> 
+      </div>
+    </div>
+  </header>
+  <!--Header End-->
+  <!--Navbar Start-->
+  <div class="nav">
+    <div class="logo">
+      <img src="img/1.webp" alt="Error">
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Department</a></li>
+        <li><a href="#" >Blog<i class="fa-solid fa-angle-down"></i></a>
+          <ul>
+            <li>Single-Blog</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li><a href="#">Pages<i class="fa-solid fa-angle-down"></i></a>
+          <ul>
+            <li>Elements</li>
+            <li>About</li>
+          </ul>
+        </li>
+        <li><a href="#">Doctors</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div> 
+    <div class="btn">
+      <button class="text">Make an Appointment</button>
+    </div>
+  </div>  
+  <!--Navbar End-->
+  <!--SectionOne1 Start-->
+  <div class="SectionOne">
+    <div class="text1">
+      <h2>Health Care</h2>
+      <h3>For Whole Family</h3>
+      <p>In healthcare sector, service excellence is the facility of</p>
+      <p>the hospital as healthcare service provider to consistently.</p>
+    </div>
+    <div class="btn">
+      <button class="text">Check Our Services</button>
+    </div>
+  </div>
+  <!--SectionOne1 End-->
+  <!--SectionOne2 Start-->
+  <div class="SectionOne2">
+    <div class="text1">
+      <h2>Health Care</h2>
+      <h3>For Whole Family</h3>
+      <p>In healthcare sector, service excellence is the facility of
+        the hospital as healthcare service provider to consistently.</p>
+    </div>
+    <div class="btn">
+      <button class="text">Check Our Services</button>
+    </div>
+  </div>
+  <!--SectionOne2 End-->
+  <!--SectionOne3 Start-->
+  <div class="SectionOne3">
+    <div class="text1">
+      <h2>Health Care</h2>
+      <h3>For Whole Family</h3>
+      <p>In healthcare sector, service excellence is the facility of</p>
+      <p>the hospital as healthcare service provider to consistently.</p>
+    </div>
+    <div class="btn">
+      <button class="text">Check Our Services</button>
+    </div>
+  </div>
+  <!--SectionOne3 End-->
+
+  <div class="slider-box">
+    <div id="slider">
+        <img src="img/15.webp" alt="">
+        <img src="img/3.webp" alt="">
+        <img src="img/17.webp" alt="">
+    </div>
+    <div class="indicators">
+        <span id="btn1" class="active"></span>
+        <span id="btn2"></span>
+        <span id="btn3"></span>
+    </div>
+  </div>
+  
+  
+  <script>
+  
+    var slide = document.getElementById("slider");
+    var btn1 = document.getElementById('btn1');
+    var btn2 = document.getElementById('btn2');
+    var btn3 = document.getElementById('btn3');
+  
+    btn1.onclick = function () {
+        slide.style.transform = "translateX(0px)";
+        btn1.classList.add('active');
+        btn2.classList.remove('active');
+        btn3.classList.remove('active');
+          };
+    btn2.onclick = function () {
+        slide.style.transform = "translateX(-100%)";
+        btn1.classList.remove('active');
+        btn2.classList.add('active');
+        btn3.classList.remove('active');
+    };
+    btn3.onclick = function () {
+        slide.style.transform = "translateX(-200%)";
+        btn1.classList.remove('active');
+        btn2.classList.remove('active');
+        btn3.classList.add('active');
+    };
+    btn4.onclick = function () {
+        slide.style.transform = "translateX(-300%)";
+        btn1.classList.remove('active');
+        btn2.classList.remove('active');
+        btn3.classList.remove('active');
+    };
+  
+  </script>
+
+
+  <!--SectionTwo Start-->
+  <div class="SectionTwo">
+    <div class="service">
+      <i class="fa-solid fa-heart-pulse"></i>
+      <h3>Hospitality</h3>
+      <p>Clinical excellence must be the priority for any health care service provider.</p>
+      <div class="btn">
+        <button class="text">Apply For A Bed</button>
+      </div>
+    </div>
+
+    <div class="service" id="bc">
+      <i class="fa-solid fa-phone"></i>
+      <h3>Emergency Care</h3>
+      <p>Clinical excellence must be the priority for any health care service provider.</p>
+      <div class="btn">
+        <button class="text">+911</button>
+      </div>
+    </div>
+
+    <div class="service">
+      <i class="fa-solid fa-kit-medical"></i>
+      <h3>Chamber Service
+      </h3>
+      <p>Clinical excellence must be the priority for any health care service provider.</p>
+      <div class="btn">
+        <button class="text">Make An Appointment</button>
+      </div>
+    </div>
+  </div>
+  <!--SectionTwo End-->
+
+
+</body>
+</html>
